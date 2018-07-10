@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="200">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="199">
+            <objects>
+                <viewController id="200" sceneMemberID="viewController" customClass="ViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1219"/>
+                        <viewControllerLayoutGuide type="bottom" id="1220"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="201">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="204" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="75" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="405" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="162" y="37" width="90" height="30"/>
+                                <state key="normal" title="Load repos"/>
+                                <constraints>
+                                    <constraint id="638" firstItem="405" firstAttribute="width" constant="90"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="620" firstItem="405" firstAttribute="top" secondItem="1219" secondAttribute="bottom" constant="17"/>
+                            <constraint id="627" firstItem="204" firstAttribute="width" secondItem="201" secondAttribute="width"/>
+                            <constraint id="629" firstItem="204" firstAttribute="height" secondItem="201" secondAttribute="height"/>
+                            <constraint id="630" firstItem="204" firstAttribute="top" secondItem="405" secondAttribute="bottom" constant="8"/>
+                            <constraint id="636" firstItem="204" firstAttribute="leading" secondItem="201" secondAttribute="leading"/>
+                            <constraint id="641" firstItem="405" firstAttribute="centerX" secondItem="201" secondAttribute="centerX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="table_repos" destination="204" id="name-outlet-204"/>
+                        <outlet property="btn_load" destination="405" id="name-outlet-405"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="202" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="145"/>
+        </scene>
+    </scenes>
+</document>
